@@ -1,0 +1,21 @@
+{
+  "git": {
+    "commitMessage": "Release v${version}",
+    "requireCleanWorkingDir": false,
+    "requireBranch": "master",
+    "push": true,
+    "commit": true,
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": true
+  },
+  "hooks": {
+    "after:release": [
+      "echo Successfully released ${name} v${version} to ${repo.repository}."
+    ]
+  }
+}
