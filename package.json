@@ -8,6 +8,9 @@
     "release": "dotenv release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "zip-folder": "./zip.js"
+  },
   "keywords": [],
   "author": "Julian Pollinger",
   "bugs": {

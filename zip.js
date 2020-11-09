@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 let i = 2;
 const args = process.argv;
 let configs = {
