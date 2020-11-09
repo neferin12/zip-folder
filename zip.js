@@ -31,12 +31,20 @@ if (!configs.dir) {
     return 0;
 }
 
-console.log("Archiving "+configs.dir+" to "+configs.output)
+console.log("Archiving \""+configs.dir+"\" to \""+configs.output+"\"")
+
+const path = require('path');
+if (!path.isAbsolute(configs.dir)) {
+    configs.dir = path.join(process.cwd(), configs.dir);
+}
+if (!path.isAbsolute(configs.output)) {
+    configs.output = path.join(process.cwd(), configs.output);
+}
 
 const fs = require('fs');
 const archiver = require('archiver');
 
-let output = fs.createWriteStream(__dirname + '/' + configs.output);
+let output = fs.createWriteStream(configs.output);
 
 let archiv = archiver('zip', {
     zlib: {level: 9}
