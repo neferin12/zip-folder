@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "Julian Pollinger",
-  "license": "MIT"
+  "bugs": {
+    "email": "support@jp-studios.de",
+    "url": "https://github.com/neferin12/zip-folder/issues"
+  },
+  "repository": "https://github.com/neferin12/zip-folder",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.0.2"
+  }
 }
