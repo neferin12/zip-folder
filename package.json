@@ -1,7 +1,7 @@
 {
   "name": "@neferin/zip-folder",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "zip.js",
   "scripts": {
