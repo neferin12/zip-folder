@@ -1,5 +1,6 @@
 {
   "name": "@neferin12/zip-folder",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
